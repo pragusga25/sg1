@@ -1,0 +1,28 @@
+POST http://localhost:3000/books
+Content-Type: application/json
+x-api-key: secret
+
+{
+  "title": "TITLE 2",
+  "content": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "authors": ["Taufik"]
+}
+
+
+###
+GET http://localhost:3000/books
+
+###
+DELETE http://localhost:3000/books/1689847504359
+
+
+###
+PUT http://localhost:3000/books/1689847991188
+Content-Type: application/json
+x-api-key: secret
+
+{
+  "title": "TITLE 1",
+  "content": "ABCDEFGHIJKLM",
+  "authors": ["Taufik Pragusga"]
+}
